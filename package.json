@@ -7,7 +7,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "keywords": [
     "react"
@@ -17,11 +19,13 @@
   "dependencies": {
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
-    "react-scripts": "^1.0.17"
+    "react-scripts": "^3.1.2"
   },
   "devDependencies": {
+    "gh-pages": "^2.1.1",
     "react-router-dom": "^4.2.2",
     "react-transition-group": "^2.3.1"
   },
-  "repository":"https://github.com/LeoCR/react-router-transitions-basics.git"
+  "homepage": "https://leocr.github.io/react-router-transitions-basics/ ",
+  "repository": "https://github.com/LeoCR/react-router-transitions-basics.git"
 }
